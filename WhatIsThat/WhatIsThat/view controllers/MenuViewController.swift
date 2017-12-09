@@ -2,13 +2,13 @@
 //  ViewController.swift
 //  WhatIsThat
 //
-//  Created by Baosheng Feng on 11/14/17.
+//  Created by Baosheng Feng on 12/8/17.
 //  Copyright © 2017 gwu. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class MenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
