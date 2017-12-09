@@ -60,6 +60,15 @@ class PhotoFetchViewController: UIViewController, UIImagePickerControllerDelegat
     }
     
     
+    //pass image to image identification
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "photoIdentificationSegue"{
+            let data = imageView.image
+            let destinationViewController = segue.destination as? PhotoIdentificationViewController
+            destinationViewController?.data = data
+        }
+    }
     
     
     
@@ -85,5 +94,4 @@ class PhotoFetchViewController: UIViewController, UIImagePickerControllerDelegat
 /*
  References:
  UIImage PickerController: https://www.youtube.com/watch?v=4CbcMZOSmEk
- 
  */
