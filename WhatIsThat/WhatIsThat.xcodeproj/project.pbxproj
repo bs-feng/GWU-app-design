@@ -99,8 +99,8 @@
 			children = (
 				3DD7629E1FDA660000BAF122 /* MenuViewController.swift */,
 				3DD762B21FDB974A00BAF122 /* PhotoFetchViewController.swift */,
-				3DD762B41FDB9FF100BAF122 /* FavoritesViewController.swift */,
 				3DD762B61FDBA49100BAF122 /* PhotoIdentificationViewController.swift */,
+				3DD762B41FDB9FF100BAF122 /* FavoritesViewController.swift */,
 			);
 			path = "view controllers";
 			sourceTree = "<group>";
