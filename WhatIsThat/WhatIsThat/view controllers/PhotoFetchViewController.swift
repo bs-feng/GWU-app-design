@@ -64,6 +64,7 @@ class PhotoFetchViewController: UIViewController, UIImagePickerControllerDelegat
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "photoIdentificationSegue"{
+            
             let data = imageView.image
             let destinationViewController = segue.destination as? PhotoIdentificationViewController
             destinationViewController?.data = data
@@ -77,7 +78,7 @@ class PhotoFetchViewController: UIViewController, UIImagePickerControllerDelegat
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
     // MARK: - Navigation
 
@@ -87,9 +88,7 @@ class PhotoFetchViewController: UIViewController, UIImagePickerControllerDelegat
         // Pass the selected object to the new view controller.
     }
     */
-
 }
-
 
 /*
  References:
