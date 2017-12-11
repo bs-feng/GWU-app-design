@@ -18,6 +18,7 @@
 		3DD762B31FDB974A00BAF122 /* PhotoFetchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD762B21FDB974A00BAF122 /* PhotoFetchViewController.swift */; };
 		3DD762B51FDB9FF100BAF122 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD762B41FDB9FF100BAF122 /* FavoritesViewController.swift */; };
 		3DD762B71FDBA49100BAF122 /* PhotoIdentificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD762B61FDBA49100BAF122 /* PhotoIdentificationViewController.swift */; };
+		3DF1CAD61FDE9C6E0072AAE2 /* GoogleVisionResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF1CAD51FDE9C6E0072AAE2 /* GoogleVisionResultsTableViewCell.swift */; };
 		7FDB51FD96825968150F49EB /* Pods_WhatIsThat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57D3C91049ADDCA540EB5D1F /* Pods_WhatIsThat.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		3DD762B21FDB974A00BAF122 /* PhotoFetchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFetchViewController.swift; sourceTree = "<group>"; };
 		3DD762B41FDB9FF100BAF122 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		3DD762B61FDBA49100BAF122 /* PhotoIdentificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoIdentificationViewController.swift; sourceTree = "<group>"; };
+		3DF1CAD51FDE9C6E0072AAE2 /* GoogleVisionResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleVisionResultsTableViewCell.swift; sourceTree = "<group>"; };
 		57D3C91049ADDCA540EB5D1F /* Pods_WhatIsThat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatIsThat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0547EECFA6207E26AA09E8A /* Pods-WhatIsThat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatIsThat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatIsThat/Pods-WhatIsThat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +116,7 @@
 				3DD762A51FDA660000BAF122 /* LaunchScreen.storyboard */,
 				3DD762A01FDA660000BAF122 /* Main.storyboard */,
 				3DD762A31FDA660000BAF122 /* Assets.xcassets */,
+				3DF1CAD51FDE9C6E0072AAE2 /* GoogleVisionResultsTableViewCell.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				3DD7629D1FDA660000BAF122 /* AppDelegate.swift in Sources */,
 				3D5DC4221FDD1CA000B32D4E /* Label.swift in Sources */,
 				3D5DC4511FDD743900B32D4E /* GoogleVisionAPIStructs.swift in Sources */,
+				3DF1CAD61FDE9C6E0072AAE2 /* GoogleVisionResultsTableViewCell.swift in Sources */,
 				3D5DC4201FDD156700B32D4E /* GoogleVisionAPIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

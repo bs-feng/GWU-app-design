@@ -8,8 +8,9 @@
 
 import UIKit
 
-class PhotoIdentificationViewController: UIViewController {
+class PhotoIdentificationViewController: UIViewController , UITableViewDelegate, UITableViewDataSource{
 
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var imageView: UIImageView!
     var data: UIImage!
 
@@ -19,7 +20,10 @@ class PhotoIdentificationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.image = data
-
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
         let imageEncoded = encodeImage(data)
         
         googleVisionAPIManager.delegate = self
@@ -52,7 +56,19 @@ class PhotoIdentificationViewController: UIViewController {
 
     //////////////Table view
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return labels.count
+    }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "GoogleVisionResultsCell", for: indexPath) as! GoogleVisionResultsTableViewCell
+        
+        let label = labels[indexPath.row]
+        cell.name.text = label.description
+        cell.score.text = String(format:"%.3f",label.score)
+        
+        return cell
+    }
 
 
 
@@ -71,6 +87,10 @@ extension PhotoIdentificationViewController: GoogleVisionAPIManagerDelegate{
 
     func labelsFound(labels: [Label]){
         self.labels = labels
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+        print(labels)
         
     }
 
