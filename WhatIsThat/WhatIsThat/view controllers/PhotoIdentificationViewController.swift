@@ -104,6 +104,9 @@ extension PhotoIdentificationViewController: GoogleVisionAPIManagerDelegate{
 
     func labelsNotFound(reason:GoogleVisionAPIManager.FailureReason){
         print(reason)
+        let alert = UIAlertController(title: "Alert", message: "Bad network or Data analysis Error! Please try later!", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style:.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
