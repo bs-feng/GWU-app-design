@@ -12,7 +12,7 @@ class PhotoIdentificationViewController: UIViewController , UITableViewDelegate,
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var imageView: UIImageView!
-    var data: UIImage!
+    var data = UIImage()
 
     var labels = [Label]()
     let googleVisionAPIManager = GoogleVisionAPIManager()
@@ -70,11 +70,19 @@ class PhotoIdentificationViewController: UIViewController , UITableViewDelegate,
         return cell
     }
 
-
-
-
-
-
+    ////pass data
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "IdentificationDetailSegue"){
+            if let indexPath = self.tableView.indexPathForSelectedRow{
+            
+            let destinationViewController = segue.destination as? PhotoIdentificationDetailsViewController
+            destinationViewController?.getImage = data
+            destinationViewController?.getIdentification = labels[indexPath.row].description
+            }
+        }
+    }
+    
     //////
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -105,6 +113,8 @@ extension PhotoIdentificationViewController: GoogleVisionAPIManagerDelegate{
  https://github.com/GoogleCloudPlatform/cloud-vision/tree/master/ios/
  https://medium.com/@stasost/ios-three-ways-to-pass-data-from-model-to-controller-b47cc72a4336
  https://github.com/gw-mobile-17/pushup-tracker
+ https://stackoverflow.com/questions/28430663/send-data-from-tableview-to-detailview-swift
+ https://www.youtube.com/watch?v=czWu1RXnnUE
  */
 
 ////////////////////////////

@@ -67,7 +67,7 @@ class PhotoFetchViewController: UIViewController, UIImagePickerControllerDelegat
             
             let data = imageView.image
             let destinationViewController = segue.destination as? PhotoIdentificationViewController
-            destinationViewController?.data = data
+            destinationViewController?.data = data!
         }
     }
     

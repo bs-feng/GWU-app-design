@@ -9,7 +9,7 @@
 
 
 
-//Google Vision Results
+//Google Vision Results model
 
 import Foundation
 
