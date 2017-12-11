@@ -24,6 +24,12 @@ class PhotoIdentificationDetailsViewController: UIViewController {
         
     }
 
+    @IBAction func favoriteManager(_ sender: Any) {
+        let alert = UIAlertController(title: "Favorite", message: "Added to Favorites List", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style:.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     
     
     override func didReceiveMemoryWarning() {

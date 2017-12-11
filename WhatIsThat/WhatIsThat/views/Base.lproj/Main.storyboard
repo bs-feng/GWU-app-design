@@ -28,10 +28,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFN-R1-lt0">
-                                <rect key="frame" x="156" y="347" width="103" height="50"/>
+                                <rect key="frame" x="149" y="347" width="117" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Favorite"/>
+                                <state key="normal" title="Favorites"/>
                                 <connections>
                                     <segue destination="5ST-fn-LDj" kind="show" id="Jiv-hj-XF2"/>
                                 </connections>
@@ -79,6 +79,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Google Vision"/>
                                 <connections>
+                                    <action selector="googleVisionButtonManager:" destination="OCQ-jJ-YGD" eventType="touchUpInside" id="vkY-Wg-LnS"/>
                                     <segue destination="uuC-mt-xuV" kind="show" identifier="photoIdentificationSegue" id="eoi-yw-UO6"/>
                                 </connections>
                             </button>
@@ -96,6 +97,7 @@
                         <viewLayoutGuide key="safeArea" id="RBw-wq-qG4"/>
                     </view>
                     <connections>
+                        <outlet property="googleVisionButton" destination="14c-Ea-Nr8" id="rNl-HP-naA"/>
                         <outlet property="imageView" destination="9Rg-8G-TSL" id="VLB-ax-gda"/>
                     </connections>
                 </viewController>
@@ -173,7 +175,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fso-LV-MAB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fso-LV-MAB">
                                 <rect key="frame" x="0.0" y="64" width="195" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -205,6 +207,9 @@
                                 <rect key="frame" x="268" y="508" width="80" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Favorite"/>
+                                <connections>
+                                    <action selector="favoriteManager:" destination="VmT-Tc-VXX" eventType="touchUpInside" id="rzj-GI-CgW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVE-FF-TiQ">
                                 <rect key="frame" x="268" y="586" width="80" height="70"/>

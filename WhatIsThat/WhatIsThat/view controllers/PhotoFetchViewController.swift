@@ -11,6 +11,7 @@ import UIKit
 class PhotoFetchViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var googleVisionButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +46,6 @@ class PhotoFetchViewController: UIViewController, UIImagePickerControllerDelegat
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
         self.present(actionSheet, animated: true, completion: nil)
-        
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
@@ -59,15 +59,29 @@ class PhotoFetchViewController: UIViewController, UIImagePickerControllerDelegat
         picker.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func googleVisionButtonManager(_ sender: Any) {
+        
+        let button = sender as! UIButton
+        
+        if(imageView.image == nil){
+            let alert = UIAlertController(title: "Alert", message: "Import an image first!", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style:.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }else{
+            button.isEnabled = true
+        }
+        
+    }
     
     //pass image to image identification
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "photoIdentificationSegue"{
             
-            let data = imageView.image
+            if let data = imageView.image{
             let destinationViewController = segue.destination as? PhotoIdentificationViewController
-            destinationViewController?.data = data!
+                destinationViewController?.data = data }
+            
         }
     }
     
