@@ -6,6 +6,6 @@ target 'WhatIsThat' do
   use_frameworks!
 
   # Pods for WhatIsThat
-  pod 'SwiftyJSON'
-
+      pod 'SwiftyJSON'
+      pod 'TwitterKit'
 end

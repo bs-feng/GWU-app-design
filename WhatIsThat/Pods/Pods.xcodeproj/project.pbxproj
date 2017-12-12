@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07F5AA6BC30486DA1E5B79BF1A190D19 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */; };
-		309FABD0ECCBEE5541F989E671E010E2 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */; };
+		07F5AA6BC30486DA1E5B79BF1A190D19 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D025A014C92ABC65FE4445EFFD2CE8 /* SwiftyJSON.swift */; };
+		309FABD0ECCBEE5541F989E671E010E2 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B8942F7525C65DA39D7D5C04DC2708 /* SwiftyJSON-dummy.m */; };
 		4F4F6F527E81059FFDA5F8324B593D65 /* Pods-WhatIsThat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCE785F2806A9856BCA116202E25C3B /* Pods-WhatIsThat-dummy.m */; };
-		687B719EA8C4728821D0A83F274BA8EC /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		687B719EA8C4728821D0A83F274BA8EC /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B39815EB355FE8477463C1D74E50C4ED /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9252AD03037EA991F6A48ACB8290AAC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		9945FC32F7B02965B79757FD8E6D52C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		B6CD3A2C5E124BAC78CA9807C7DC2997 /* Pods-WhatIsThat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC5D21C724A748C162A503BAB9E84334 /* Pods-WhatIsThat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,24 +27,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		18BACC54B282CE11201B6249D29E7569 /* Pods-WhatIsThat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhatIsThat.debug.xcconfig"; sourceTree = "<group>"; };
 		2773FF42D5E20DDF04151CB1ADA9F64A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		3203C0BEADE17CF27128E317E37B3335 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
 		4B087D25A889FA03BDF751D85121704B /* Pods-WhatIsThat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WhatIsThat-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5AF27E79F852B7FD0B1C6F60B35A3E65 /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterShareExtensionUIResources.bundle; path = iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle; sourceTree = "<group>"; };
+		63DBA0852C3A33EE4593846635991E2E /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = iOS/TwitterKit.framework; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		71D025A014C92ABC65FE4445EFFD2CE8 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		74AB4D100FFAE68B79D10CF6D3C8EA7B /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		82B8942F7525C65DA39D7D5C04DC2708 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		85CB50012837570E469C29B82D768D04 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = iOS/TwitterKit.framework/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		89FD3F33A491EF8CD27DDBABC11BAF23 /* Pods-WhatIsThat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WhatIsThat.modulemap"; sourceTree = "<group>"; };
 		91E66EBBB5A54E58495AEDA321608D3C /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96A9D68D6DEC6EC5630D2ED9D961F9B1 /* Pods_WhatIsThat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WhatIsThat.framework; path = "Pods-WhatIsThat.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96F2AFFAC750DF7D66D3FA9DAAA59A24 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DB6D21C7061C31B5B588E0BA36528FB /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		A49FADB4DF876A4FD18C562247C9A9B2 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = iOS/TwitterCore.framework; sourceTree = "<group>"; };
 		ABCE785F2806A9856BCA116202E25C3B /* Pods-WhatIsThat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WhatIsThat-dummy.m"; sourceTree = "<group>"; };
-		BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		B39815EB355FE8477463C1D74E50C4ED /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		C35EF5793B6783A6D1A5E70C3800D9D5 /* Pods-WhatIsThat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhatIsThat.release.xcconfig"; sourceTree = "<group>"; };
-		C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAEA96C99DCFE3CC0537F94DC7871209 /* Pods-WhatIsThat-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WhatIsThat-frameworks.sh"; sourceTree = "<group>"; };
-		D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		D2B3DA3C4AADD14CDF4B93FE6CB2AF04 /* Pods-WhatIsThat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WhatIsThat-acknowledgements.plist"; sourceTree = "<group>"; };
 		ED2AF0A7DFF05D891869DED7147B2357 /* Pods-WhatIsThat-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WhatIsThat-resources.sh"; sourceTree = "<group>"; };
 		FC5D21C724A748C162A503BAB9E84334 /* Pods-WhatIsThat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WhatIsThat-umbrella.h"; sourceTree = "<group>"; };
@@ -78,6 +82,20 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		2693DE38E8ADB075E663049DC3B11BFF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				96F2AFFAC750DF7D66D3FA9DAAA59A24 /* Info.plist */,
+				9DB6D21C7061C31B5B588E0BA36528FB /* SwiftyJSON.modulemap */,
+				3203C0BEADE17CF27128E317E37B3335 /* SwiftyJSON.xcconfig */,
+				82B8942F7525C65DA39D7D5C04DC2708 /* SwiftyJSON-dummy.m */,
+				74AB4D100FFAE68B79D10CF6D3C8EA7B /* SwiftyJSON-prefix.pch */,
+				B39815EB355FE8477463C1D74E50C4ED /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
 		276EA7826375BEA68D7AEE6896425A77 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,14 +105,33 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */ = {
+		34B4F465AE8EE40C760AA836F204916B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */,
-				8EC39E1DC11846207722B71AAFE40F98 /* Support Files */,
+				85CB50012837570E469C29B82D768D04 /* TwitterKitResources.bundle */,
+				5AF27E79F852B7FD0B1C6F60B35A3E65 /* TwitterShareExtensionUIResources.bundle */,
 			);
-			name = SwiftyJSON;
-			path = SwiftyJSON;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4C90500BBD0394F1C2E4A4B5AF3FDD0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF488393CEBEB7E72FB1FFC4E9967A77 /* SwiftyJSON */,
+				D17D90B645CCFC607B65FF99447FADDB /* TwitterCore */,
+				68C1A867055B0A572E123D4B0D5E3352 /* TwitterKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		68C1A867055B0A572E123D4B0D5E3352 /* TwitterKit */ = {
+			isa = PBXGroup;
+			children = (
+				799BC1A858FF20F3FBB7C8AA2C54073B /* Frameworks */,
+				34B4F465AE8EE40C760AA836F204916B /* Resources */,
+			);
+			name = TwitterKit;
+			path = TwitterKit;
 			sourceTree = "<group>";
 		};
 		72F820883FA1D2F9766F9D0D70E6ED59 /* Pods-WhatIsThat */ = {
@@ -115,29 +152,23 @@
 			path = "Target Support Files/Pods-WhatIsThat";
 			sourceTree = "<group>";
 		};
+		799BC1A858FF20F3FBB7C8AA2C54073B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63DBA0852C3A33EE4593846635991E2E /* TwitterKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */,
+				4C90500BBD0394F1C2E4A4B5AF3FDD0E /* Pods */,
 				276EA7826375BEA68D7AEE6896425A77 /* Products */,
 				0F91F99583F93D9888B744422EDC1382 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		8EC39E1DC11846207722B71AAFE40F98 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */,
-				D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */,
-				2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */,
-				32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */,
-				BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */,
-				05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -148,12 +179,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */ = {
+		D17D90B645CCFC607B65FF99447FADDB /* TwitterCore */ = {
 			isa = PBXGroup;
 			children = (
-				70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */,
+				F09145A7B44FFF7C9E8F4C908C8949D7 /* Frameworks */,
 			);
-			name = Pods;
+			name = TwitterCore;
+			path = TwitterCore;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -162,6 +194,24 @@
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		F09145A7B44FFF7C9E8F4C908C8949D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A49FADB4DF876A4FD18C562247C9A9B2 /* TwitterCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF488393CEBEB7E72FB1FFC4E9967A77 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				71D025A014C92ABC65FE4445EFFD2CE8 /* SwiftyJSON.swift */,
+				2693DE38E8ADB075E663049DC3B11BFF /* Support Files */,
+			);
+			name = SwiftyJSON;
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,7 +424,7 @@
 		};
 		6A1F6895932B58DCE0A2CCDDCDEAB3C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 3203C0BEADE17CF27128E317E37B3335 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -494,7 +544,7 @@
 		};
 		F8C76F0CD2184AC0A2CD0C2A4871E231 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 3203C0BEADE17CF27128E317E37B3335 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
