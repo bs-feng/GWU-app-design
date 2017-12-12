@@ -197,6 +197,9 @@
                                 <rect key="frame" x="57" y="508" width="80" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Wikipedia"/>
+                                <connections>
+                                    <action selector="wikipediaSafari:" destination="VmT-Tc-VXX" eventType="touchUpInside" id="bj0-RK-eML"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQC-qW-2hb">
                                 <rect key="frame" x="57" y="586" width="80" height="70"/>
