@@ -10,6 +10,7 @@
 		3D5DC4201FDD156700B32D4E /* GoogleVisionAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5DC41F1FDD156700B32D4E /* GoogleVisionAPIManager.swift */; };
 		3D5DC4221FDD1CA000B32D4E /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5DC4211FDD1CA000B32D4E /* Label.swift */; };
 		3D5DC4511FDD743900B32D4E /* GoogleVisionAPIStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5DC4501FDD743900B32D4E /* GoogleVisionAPIStructs.swift */; };
+		3D9D89EE1FDF495A002F93C9 /* WikipediaResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D89ED1FDF495A002F93C9 /* WikipediaResult.swift */; };
 		3DD7629D1FDA660000BAF122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7629C1FDA660000BAF122 /* AppDelegate.swift */; };
 		3DD7629F1FDA660000BAF122 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7629E1FDA660000BAF122 /* MenuViewController.swift */; };
 		3DD762A21FDA660000BAF122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD762A01FDA660000BAF122 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		3D5DC41F1FDD156700B32D4E /* GoogleVisionAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleVisionAPIManager.swift; sourceTree = "<group>"; };
 		3D5DC4211FDD1CA000B32D4E /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		3D5DC4501FDD743900B32D4E /* GoogleVisionAPIStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleVisionAPIStructs.swift; sourceTree = "<group>"; };
+		3D9D89ED1FDF495A002F93C9 /* WikipediaResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaResult.swift; sourceTree = "<group>"; };
 		3DD762991FDA660000BAF122 /* WhatIsThat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatIsThat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD7629C1FDA660000BAF122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DD7629E1FDA660000BAF122 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			children = (
 				3D5DC44D1FDD73EB00B32D4E /* codable */,
 				3D5DC4211FDD1CA000B32D4E /* Label.swift */,
+				3D9D89ED1FDF495A002F93C9 /* WikipediaResult.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -132,8 +135,8 @@
 				3DD7629E1FDA660000BAF122 /* MenuViewController.swift */,
 				3DD762B21FDB974A00BAF122 /* PhotoFetchViewController.swift */,
 				3DD762B61FDBA49100BAF122 /* PhotoIdentificationViewController.swift */,
-				3DD762B41FDB9FF100BAF122 /* FavoritesViewController.swift */,
 				3DF1CAD71FDEA2040072AAE2 /* PhotoIdentificationDetailsViewController.swift */,
+				3DD762B41FDB9FF100BAF122 /* FavoritesViewController.swift */,
 			);
 			path = "view controllers";
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			files = (
 				3DD7629F1FDA660000BAF122 /* MenuViewController.swift in Sources */,
 				3DF1CADA1FDEA99A0072AAE2 /* WikipediaAPIManager.swift in Sources */,
+				3D9D89EE1FDF495A002F93C9 /* WikipediaResult.swift in Sources */,
 				3DD762B71FDBA49100BAF122 /* PhotoIdentificationViewController.swift in Sources */,
 				3DD762B31FDB974A00BAF122 /* PhotoFetchViewController.swift in Sources */,
 				3DD762B51FDB9FF100BAF122 /* FavoritesViewController.swift in Sources */,
