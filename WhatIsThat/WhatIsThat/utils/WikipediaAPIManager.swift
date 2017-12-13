@@ -53,14 +53,14 @@ class WikipediaAPIManager{
             }
             
             //get the detail results
-            let firstKey = pagesJsonArrayObject.keys.first as! String
-            let detailJsonArrayObject = pagesJsonArrayObject[firstKey] as? [String:Any]
+            let firstKey = pagesJsonArrayObject.keys.first as String?
+            let detailJsonArrayObject = pagesJsonArrayObject[firstKey!] as? [String:Any]
             
             let title = detailJsonArrayObject!["title"] as? String
             let pageid = firstKey
             let extract = detailJsonArrayObject!["extract"] as? String
             
-            let wikipediaResultPages = wikipediaResult(pageid: pageid, title: title!, extract: extract!)
+            let wikipediaResultPages = wikipediaResult(pageid: pageid!, title: title!, extract: extract!)
             
             self.delegate?.wikiFound(wikipediaResult: wikipediaResultPages)
         }
