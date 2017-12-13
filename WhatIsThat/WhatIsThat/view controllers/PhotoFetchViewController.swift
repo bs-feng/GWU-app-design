@@ -23,12 +23,13 @@ class PhotoFetchViewController: UIViewController, UIImagePickerControllerDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //need to get the permission of gps,photo library and camera first
+        //or there will be an error to get the gps info when first use camera or import photo
         
         //current location permission
         let authStatus = CLLocationManager.authorizationStatus()
         if authStatus == .notDetermined{
             locationManager.requestWhenInUseAuthorization()
-            
         }
         
         //photo library permission
@@ -45,7 +46,6 @@ class PhotoFetchViewController: UIViewController, UIImagePickerControllerDelegat
         //camera permission
         AVCaptureDevice.requestAccess(for: AVMediaType.video) { response in
             if response {
-                
             } else {
                 return
             }
@@ -96,7 +96,7 @@ class PhotoFetchViewController: UIViewController, UIImagePickerControllerDelegat
         longitude = 0.0
         latitude = 0.0
         
-        //get gps information from the photo
+        //get gps information from the photo selected from photo library
         if(picker.sourceType == .photoLibrary){
         if let URL = info[UIImagePickerControllerReferenceURL] as? URL{
             let opts = PHFetchOptions()
@@ -161,7 +161,7 @@ class PhotoFetchViewController: UIViewController, UIImagePickerControllerDelegat
         }
     }
     
-    //current location
+    //current location - locationManager
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error)
     }

@@ -79,6 +79,7 @@ class GoogleVisionAPIManager{
                 return
             }
             
+            //details
             let labelAnnotations = root.responses[0].labelAnnotations
             var labels = [Label]()
             

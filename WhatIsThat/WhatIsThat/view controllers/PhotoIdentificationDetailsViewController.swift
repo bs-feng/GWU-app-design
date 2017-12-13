@@ -9,6 +9,7 @@
 import UIKit
 import SafariServices
 
+
 class PhotoIdentificationDetailsViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
@@ -35,8 +36,9 @@ class PhotoIdentificationDetailsViewController: UIViewController {
         
     }
 
-    //favorite button
+    //favorite button and relative function
     @IBAction func favoriteManager(_ sender: Any) {
+        
         
         
         
@@ -44,8 +46,23 @@ class PhotoIdentificationDetailsViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "OK", style:.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
         
-        print(getlatitude)
-        print(getlongitude)
+        
+        let imageSavedInfo = saveImageToDocumentDirectory(image: getImage)
+        let imageFileName = imageSavedInfo.0
+        let imageFilePath = imageSavedInfo.1
+        
+        
+    }
+    
+    func saveImageToDocumentDirectory(image: UIImage) -> (String, String){
+
+        let fileManager = FileManager.default
+        let imageFileName = "\(UUID().uuidString).jpg"
+        let imageData = UIImageJPEGRepresentation(getImage, 0.5)
+        let imageFilePath = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).strings(byAppendingPaths: [imageFileName])
+        fileManager.createFile(atPath: imageFilePath[0], contents: imageData, attributes: nil)
+        
+        return (imageFileName, imageFilePath[0])
     }
     
     //wikipedia safari
@@ -89,7 +106,6 @@ class PhotoIdentificationDetailsViewController: UIViewController {
         
         let shareActivityController = UIActivityViewController(activityItems: [sharedText,sharedImage], applicationActivities: nil)
         present(shareActivityController, animated: true, completion: nil)
-        
     }
     
     /////
@@ -134,5 +150,7 @@ extension PhotoIdentificationDetailsViewController: WikipediaAPIManagerDelegate{
  https://www.raywenderlich.com/133825/uiactivityviewcontroller-tutorial
  https://www.youtube.com/watch?v=KxPavuI4t8o
  https://stackoverflow.com/questions/24022479/how-would-i-create-a-uialertview-in-swift
+ 
+ https://iosdevcenters.blogspot.com/2016/04/save-and-get-image-from-document.html
  */
 

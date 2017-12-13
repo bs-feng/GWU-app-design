@@ -67,3 +67,8 @@ class WikipediaAPIManager{
         task.resume()
     }
 }
+
+/*
+ References:
+ https://github.com/gw-mobile-17/pushup-tracker
+ */
