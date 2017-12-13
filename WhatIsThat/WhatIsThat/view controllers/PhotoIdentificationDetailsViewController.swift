@@ -19,6 +19,8 @@ class PhotoIdentificationDetailsViewController: UIViewController {
     var getImage = UIImage()
     var getIdentification = String()
     var getPageID = String()
+    var getlongitude = Double()
+    var getlatitude = Double()
     
     let wikipediaAPIManager = WikipediaAPIManager()
     
@@ -41,6 +43,9 @@ class PhotoIdentificationDetailsViewController: UIViewController {
         let alert = UIAlertController(title: "Favorite", message: "Added to Favorites List", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style:.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
+        
+        print(getlatitude)
+        print(getlongitude)
     }
     
     //wikipedia safari

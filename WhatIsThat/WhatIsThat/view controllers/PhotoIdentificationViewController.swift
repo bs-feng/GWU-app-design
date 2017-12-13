@@ -13,6 +13,9 @@ class PhotoIdentificationViewController: UIViewController , UITableViewDelegate,
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var imageView: UIImageView!
     var data = UIImage()
+    
+    var getlongitude = Double()
+    var getlatitude = Double()
 
     var labels = [Label]()
     let googleVisionAPIManager = GoogleVisionAPIManager()
@@ -79,6 +82,9 @@ class PhotoIdentificationViewController: UIViewController , UITableViewDelegate,
             let destinationViewController = segue.destination as? PhotoIdentificationDetailsViewController
             destinationViewController?.getImage = data
             destinationViewController?.getIdentification = labels[indexPath.row].description
+            destinationViewController?.getlongitude = getlongitude
+            destinationViewController?.getlatitude = getlatitude
+                
             }
         }
     }
