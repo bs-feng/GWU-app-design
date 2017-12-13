@@ -33,7 +33,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Favorites"/>
                                 <connections>
-                                    <segue destination="M5V-0M-wTN" kind="show" id="V8J-xt-yq8"/>
+                                    <segue destination="bt3-ef-AQE" kind="show" id="vCn-mP-nAf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -46,36 +46,33 @@
             </objects>
             <point key="canvasLocation" x="-347.82608695652175" y="-373.36956521739131"/>
         </scene>
-        <!--Favorites Table View Controller-->
-        <scene sceneID="YdT-Qv-1IS">
+        <!--Favorites View Controller-->
+        <scene sceneID="AvK-by-4Wx">
             <objects>
-                <tableViewController id="M5V-0M-wTN" customClass="FavoritesTableViewController" customModule="WhatIsThat" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jJI-O1-Clj">
+                <viewController id="bt3-ef-AQE" customClass="FavoritesViewController" customModule="WhatIsThat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0U5-rW-4jq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQv-tU-nOY">
+                                <rect key="frame" x="0.0" y="64" width="414" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Map"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DSK-DX-OD8">
+                                <rect key="frame" x="0.0" y="132" width="414" height="604"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="YQY-Ea-rZh">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YQY-Ea-rZh" id="0yx-AB-5dt">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="VmT-Tc-VXX" kind="show" id="z4Q-tF-2Zb"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="M5V-0M-wTN" id="Daa-PU-Gvu"/>
-                            <outlet property="delegate" destination="M5V-0M-wTN" id="w6D-iE-G0a"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uKU-bT-T3A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <viewLayoutGuide key="safeArea" id="F29-HM-Iyb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bLM-Tm-gYq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1262" y="304"/>
+            <point key="canvasLocation" x="728.98550724637687" y="138.58695652173915"/>
         </scene>
         <!--Photo Fetch View Controller-->
         <scene sceneID="hVn-Lw-4j5">
@@ -305,7 +302,4 @@
             <point key="canvasLocation" x="-1287" y="-373"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="z4Q-tF-2Zb"/>
-    </inferredMetricsTieBreakers>
 </document>

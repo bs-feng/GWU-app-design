@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D04CB6C1FE1CC8B00F2E618 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D04CB6B1FE1CC8B00F2E618 /* FavoritesViewController.swift */; };
 		3D5DC4201FDD156700B32D4E /* GoogleVisionAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5DC41F1FDD156700B32D4E /* GoogleVisionAPIManager.swift */; };
 		3D5DC4221FDD1CA000B32D4E /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5DC4211FDD1CA000B32D4E /* Label.swift */; };
 		3D5DC4511FDD743900B32D4E /* GoogleVisionAPIStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5DC4501FDD743900B32D4E /* GoogleVisionAPIStructs.swift */; };
 		3D9D89EE1FDF495A002F93C9 /* WikipediaResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D89ED1FDF495A002F93C9 /* WikipediaResult.swift */; };
 		3D9D89F01FDFDA1A002F93C9 /* SearchTimeineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D89EF1FDFDA1A002F93C9 /* SearchTimeineViewController.swift */; };
-		3D9D89F21FDFF2D9002F93C9 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D89F11FDFF2D9002F93C9 /* FavoritesTableViewController.swift */; };
 		3DD7629D1FDA660000BAF122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7629C1FDA660000BAF122 /* AppDelegate.swift */; };
 		3DD7629F1FDA660000BAF122 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7629E1FDA660000BAF122 /* MenuViewController.swift */; };
 		3DD762A21FDA660000BAF122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD762A01FDA660000BAF122 /* Main.storyboard */; };
@@ -28,12 +28,12 @@
 
 /* Begin PBXFileReference section */
 		0A2C1249C6EA0E32FE893DB7 /* Pods-WhatIsThat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatIsThat.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatIsThat/Pods-WhatIsThat.release.xcconfig"; sourceTree = "<group>"; };
+		3D04CB6B1FE1CC8B00F2E618 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		3D5DC41F1FDD156700B32D4E /* GoogleVisionAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleVisionAPIManager.swift; sourceTree = "<group>"; };
 		3D5DC4211FDD1CA000B32D4E /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		3D5DC4501FDD743900B32D4E /* GoogleVisionAPIStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleVisionAPIStructs.swift; sourceTree = "<group>"; };
 		3D9D89ED1FDF495A002F93C9 /* WikipediaResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaResult.swift; sourceTree = "<group>"; };
 		3D9D89EF1FDFDA1A002F93C9 /* SearchTimeineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTimeineViewController.swift; sourceTree = "<group>"; };
-		3D9D89F11FDFF2D9002F93C9 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
 		3DD762991FDA660000BAF122 /* WhatIsThat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatIsThat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD7629C1FDA660000BAF122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DD7629E1FDA660000BAF122 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 				3DD762B61FDBA49100BAF122 /* PhotoIdentificationViewController.swift */,
 				3DF1CAD71FDEA2040072AAE2 /* PhotoIdentificationDetailsViewController.swift */,
 				3D9D89EF1FDFDA1A002F93C9 /* SearchTimeineViewController.swift */,
-				3D9D89F11FDFF2D9002F93C9 /* FavoritesTableViewController.swift */,
+				3D04CB6B1FE1CC8B00F2E618 /* FavoritesViewController.swift */,
 			);
 			path = "view controllers";
 			sourceTree = "<group>";
@@ -294,8 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D04CB6C1FE1CC8B00F2E618 /* FavoritesViewController.swift in Sources */,
 				3DD7629F1FDA660000BAF122 /* MenuViewController.swift in Sources */,
-				3D9D89F21FDFF2D9002F93C9 /* FavoritesTableViewController.swift in Sources */,
 				3DF1CADA1FDEA99A0072AAE2 /* WikipediaAPIManager.swift in Sources */,
 				3D9D89EE1FDF495A002F93C9 /* WikipediaResult.swift in Sources */,
 				3DD762B71FDBA49100BAF122 /* PhotoIdentificationViewController.swift in Sources */,

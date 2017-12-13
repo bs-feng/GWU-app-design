@@ -39,19 +39,35 @@ class PhotoIdentificationDetailsViewController: UIViewController {
     //favorite button and relative function
     @IBAction func favoriteManager(_ sender: Any) {
         
+        let key = getIdentification
         
-        
-        
-        let alert = UIAlertController(title: "Favorite", message: "Added to Favorites List", preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "OK", style:.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
-        
-        
-        let imageSavedInfo = saveImageToDocumentDirectory(image: getImage)
-        let imageFileName = imageSavedInfo.0
-        let imageFilePath = imageSavedInfo.1
-        
-        
+        //remove from userdefault
+        if(UserDefaults.standard.dictionary(forKey: key) != nil){
+            
+            UserDefaults.standard.removeObject(forKey: key)
+            
+            let alert = UIAlertController(title: "Favorite", message: "Removed From Favorites List", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style:.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+            
+        }else{
+            //add to userdefault
+            let imageSavedInfo = saveImageToDocumentDirectory(image: getImage)
+            let imageFileName = imageSavedInfo.0
+            let imageFilePath = imageSavedInfo.1
+            let title = getIdentification
+            let longitude = getlongitude
+            let latitude = getlatitude
+            
+            let favoriteDictionary = ["title":title, "imageFileName":imageFileName, "imageFilePath":imageFilePath, "longitude":longitude, "latitude":latitude] as Dictionary
+            
+            UserDefaults.standard.set(favoriteDictionary, forKey: "\(title)")
+            
+            let alert = UIAlertController(title: "Favorite", message: "Added to Favorites List", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style:.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     func saveImageToDocumentDirectory(image: UIImage) -> (String, String){
@@ -152,5 +168,6 @@ extension PhotoIdentificationDetailsViewController: WikipediaAPIManagerDelegate{
  https://stackoverflow.com/questions/24022479/how-would-i-create-a-uialertview-in-swift
  
  https://iosdevcenters.blogspot.com/2016/04/save-and-get-image-from-document.html
+ https://stackoverflow.com/questions/11342897/how-to-compare-two-uiimage-objects
  */
 
