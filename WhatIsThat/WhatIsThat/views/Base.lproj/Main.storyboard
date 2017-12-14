@@ -64,11 +64,44 @@
                                 <rect key="frame" x="0.0" y="132" width="414" height="604"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FavoritesCell" rowHeight="80" id="qKE-hz-f61" customClass="FavoritesTableViewCell" customModule="WhatIsThat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qKE-hz-f61" id="k8i-1z-1Sg">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="79.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWf-0v-Yjl">
+                                                    <rect key="frame" x="231" y="0.0" width="130" height="74"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R08-8x-FaU">
+                                                    <rect key="frame" x="39" y="0.0" width="130" height="74"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cellImage" destination="R08-8x-FaU" id="Czg-GZ-LbR"/>
+                                            <outlet property="cellTitle" destination="pWf-0v-Yjl" id="xRv-b1-sdS"/>
+                                            <outlet property="imageView" destination="R08-8x-FaU" id="n1Y-o2-M3R"/>
+                                            <segue destination="VmT-Tc-VXX" kind="show" identifier="FavoritestoDetailsSegue" id="wMp-cP-X3x"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="F29-HM-Iyb"/>
                     </view>
+                    <connections>
+                        <outlet property="mapButton" destination="aQv-tU-nOY" id="dLB-Zp-gha"/>
+                        <outlet property="tableView" destination="DSK-DX-OD8" id="nTB-ad-WFC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bLM-Tm-gYq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -302,4 +335,7 @@
             <point key="canvasLocation" x="-1287" y="-373"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="wMp-cP-X3x"/>
+    </inferredMetricsTieBreakers>
 </document>

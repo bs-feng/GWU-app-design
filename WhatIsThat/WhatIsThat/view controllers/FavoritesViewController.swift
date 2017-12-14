@@ -8,18 +8,64 @@
 
 import UIKit
 
-class FavoritesViewController: UIViewController {
+class FavoritesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var mapButton: UIButton!
+    
+    var favorites = [Favorite]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        userDefaultsDataFetch()
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    //get favorite info from UserDefault
+    func userDefaultsDataFetch(){
+        for (key, value) in UserDefaults.standard.dictionaryRepresentation(){
+            if let data = UserDefaults.standard.dictionary(forKey: key){
+                favorites.append(Favorite(title: data["title"] as! String, imageFileName: data["imageFileName"] as! String, imageFilePath: data["imageFilePath"] as! String, longitude: data["longitude"] as! Double, latitude: data["latitude"] as! Double))
+            }
+        }
     }
     
+    ///table view
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return favorites.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FavoritesCell", for: indexPath) as! FavoritesTableViewCell
+        
+        cell.cellTitle.text = favorites[indexPath.row].title
+        cell.cellImage.image = UIImage(contentsOfFile: favorites[indexPath.row].imageFilePath)
 
+        return cell
+    }
+    
+    ///pass data
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "FavoritestoDetailsSegue"){
+            if let indexPath = self.tableView.indexPathForSelectedRow{
+                
+                let destinationViewController = segue.destination as? PhotoIdentificationDetailsViewController
+                destinationViewController?.getImage = UIImage(contentsOfFile: favorites[indexPath.row].imageFilePath)!
+                destinationViewController?.getIdentification = favorites[indexPath.row].title
+                destinationViewController?.getlongitude = favorites[indexPath.row].longitude
+                destinationViewController?.getlatitude = favorites[indexPath.row].latitude
+                
+            }
+        }
+    }
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+
+    }
 }
