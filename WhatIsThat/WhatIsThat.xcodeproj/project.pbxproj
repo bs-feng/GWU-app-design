@@ -13,6 +13,8 @@
 		3D5DC4511FDD743900B32D4E /* GoogleVisionAPIStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5DC4501FDD743900B32D4E /* GoogleVisionAPIStructs.swift */; };
 		3D8043EB1FE2077100DB6D53 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8043EA1FE2077100DB6D53 /* FavoritesTableViewCell.swift */; };
 		3D8043ED1FE2087800DB6D53 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8043EC1FE2087800DB6D53 /* Favorite.swift */; };
+		3D8043F31FE219E000DB6D53 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8043F21FE219E000DB6D53 /* MapKit.framework */; };
+		3D8043F51FE21A7200DB6D53 /* mapFavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8043F41FE21A7200DB6D53 /* mapFavoritesViewController.swift */; };
 		3D9D89EE1FDF495A002F93C9 /* WikipediaResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D89ED1FDF495A002F93C9 /* WikipediaResult.swift */; };
 		3D9D89F01FDFDA1A002F93C9 /* SearchTimeineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D89EF1FDFDA1A002F93C9 /* SearchTimeineViewController.swift */; };
 		3DD7629D1FDA660000BAF122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7629C1FDA660000BAF122 /* AppDelegate.swift */; };
@@ -36,6 +38,8 @@
 		3D5DC4501FDD743900B32D4E /* GoogleVisionAPIStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleVisionAPIStructs.swift; sourceTree = "<group>"; };
 		3D8043EA1FE2077100DB6D53 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 		3D8043EC1FE2087800DB6D53 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
+		3D8043F21FE219E000DB6D53 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3D8043F41FE21A7200DB6D53 /* mapFavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapFavoritesViewController.swift; sourceTree = "<group>"; };
 		3D9D89ED1FDF495A002F93C9 /* WikipediaResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaResult.swift; sourceTree = "<group>"; };
 		3D9D89EF1FDFDA1A002F93C9 /* SearchTimeineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTimeineViewController.swift; sourceTree = "<group>"; };
 		3DD762991FDA660000BAF122 /* WhatIsThat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatIsThat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D8043F31FE219E000DB6D53 /* MapKit.framework in Frameworks */,
 				7FDB51FD96825968150F49EB /* Pods_WhatIsThat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +151,7 @@
 				3DF1CAD71FDEA2040072AAE2 /* PhotoIdentificationDetailsViewController.swift */,
 				3D9D89EF1FDFDA1A002F93C9 /* SearchTimeineViewController.swift */,
 				3D04CB6B1FE1CC8B00F2E618 /* FavoritesViewController.swift */,
+				3D8043F41FE21A7200DB6D53 /* mapFavoritesViewController.swift */,
 			);
 			path = "view controllers";
 			sourceTree = "<group>";
@@ -153,6 +159,7 @@
 		D30ADC9E9FB5E278F55CBF2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D8043F21FE219E000DB6D53 /* MapKit.framework */,
 				57D3C91049ADDCA540EB5D1F /* Pods_WhatIsThat.framework */,
 			);
 			name = Frameworks;
@@ -203,6 +210,11 @@
 					3DD762981FDA660000BAF122 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -306,6 +318,7 @@
 				3DF1CADA1FDEA99A0072AAE2 /* WikipediaAPIManager.swift in Sources */,
 				3D9D89EE1FDF495A002F93C9 /* WikipediaResult.swift in Sources */,
 				3DD762B71FDBA49100BAF122 /* PhotoIdentificationViewController.swift in Sources */,
+				3D8043F51FE21A7200DB6D53 /* mapFavoritesViewController.swift in Sources */,
 				3DD762B31FDB974A00BAF122 /* PhotoFetchViewController.swift in Sources */,
 				3DD7629D1FDA660000BAF122 /* AppDelegate.swift in Sources */,
 				3D9D89F01FDFDA1A002F93C9 /* SearchTimeineViewController.swift in Sources */,

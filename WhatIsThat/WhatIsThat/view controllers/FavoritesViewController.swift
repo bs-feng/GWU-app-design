@@ -48,18 +48,29 @@ class FavoritesViewController: UIViewController, UITableViewDelegate, UITableVie
         return cell
     }
     
-    ///pass data
+    ///pass data to details or map
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "FavoritestoDetailsSegue"){
             if let indexPath = self.tableView.indexPathForSelectedRow{
                 
                 let destinationViewController = segue.destination as? PhotoIdentificationDetailsViewController
+                
+                if(UIImage(contentsOfFile: favorites[indexPath.row].imageFilePath) != nil){
                 destinationViewController?.getImage = UIImage(contentsOfFile: favorites[indexPath.row].imageFilePath)!
+                }else{
+                    destinationViewController?.getImage = UIImage()
+                }
                 destinationViewController?.getIdentification = favorites[indexPath.row].title
                 destinationViewController?.getlongitude = favorites[indexPath.row].longitude
                 destinationViewController?.getlatitude = favorites[indexPath.row].latitude
                 
             }
+        }
+        if (segue.identifier == "FavoritesToMap"){
+   
+                let destinationViewController = segue.destination as? mapFavoritesViewController
+                destinationViewController?.favorites = favorites
+            
         }
     }
     

@@ -59,6 +59,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Map"/>
+                                <connections>
+                                    <segue destination="exA-ML-TCL" kind="show" identifier="FavoritesToMap" id="pHV-ha-ncE"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DSK-DX-OD8">
                                 <rect key="frame" x="0.0" y="132" width="414" height="604"/>
@@ -106,6 +109,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bLM-Tm-gYq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="728.98550724637687" y="138.58695652173915"/>
+        </scene>
+        <!--Map Favorites View Controller-->
+        <scene sceneID="qTI-A9-osY">
+            <objects>
+                <viewController id="exA-ML-TCL" customClass="mapFavoritesViewController" customModule="WhatIsThat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G2X-0c-GOf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kqb-g1-NMH">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2gv-Pe-gGb"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="kqb-g1-NMH" id="zSk-AJ-ziT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qp6-bd-SXI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2024.6376811594205" y="138.58695652173915"/>
         </scene>
         <!--Photo Fetch View Controller-->
         <scene sceneID="hVn-Lw-4j5">
