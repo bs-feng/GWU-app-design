@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id ="@+id/action_favorite"
+        android:icon="@drawable/ic_action_favorite"
+        android:title="@string/detail_action_favorite"
+        android:onClick="addToFavorite"
+        app:showAsAction = "ifRoom"/>
+
+    <item
+        android:id ="@+id/action_share"
+        android:icon="@drawable/ic_action_share"
+        android:title="@string/detail_action_share"
+        android:onClick="shareLandmark"
+        app:showAsAction = "ifRoom"/>
+
+    <item
+        android:id ="@+id/action_map"
+        android:icon="@drawable/ic_action_map"
+        android:title="@string/detail_action_map"
+        android:onClick="openMap"
+        app:showAsAction = "ifRoom"/>
+
+
+</menu>

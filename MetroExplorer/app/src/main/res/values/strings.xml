@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MetroExplorer</string>
+    <string name="detail_action_favorite">Favorite</string>
+    <string name="detail_action_share">Share</string>
+    <string name="detail_action_map">Map</string>
+    <string name="metrostations_activity_label">Metro Stations</string>
+    <string name="landmark_detail_label">Landmark Detail</string>
+    <string name="mainactivity_nearest">Nearest Station</string>
+    <string name="mainactivity_select">Select Station</string>
+    <string name="mainactivity_favorites">Favorites</string>
+    <string name="metrostations_toolbar_search">Search</string>
+    <string name="share_word_one">Check out the</string>
+    <string name="share_word_two">! It is great!</string>
+    <string name="favorites_activity_label">Favorites List</string>
+    <string name="favorite_add">Favorite added successful!</string>
+    <string name="favorite_del">Favorite removed!</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>
+
+
